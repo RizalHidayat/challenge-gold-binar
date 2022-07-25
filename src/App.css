@@ -1,0 +1,34 @@
+body{
+  padding: 0;
+  margin: 0;
+  /* width: 100vw; */
+}
+
+.bg-light-green{
+  background-color: rgba(241, 243, 255, 1);
+}
+
+.landing{
+  height: calc(100vh - 200px);
+}
+
+.left-landing{
+  padding-left: 8rem;
+}
+
+.right-landing img{
+  width: 662px;
+}
+
+.navbar{
+  background-color: rgba(241, 243, 255, 1)
+}
+
+.service{
+  padding: 60px;
+  height: 100vh;
+}
+
+.left-service img{
+  width: 98%;
+}
