@@ -10,22 +10,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item ms-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Service">
                 Our Service
               </a>
             </li>
             <li className="nav-item ms-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#WhyUs">
                 Why Us
               </a>
             </li>
             <li className="nav-item ms-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Testimonial">
                 Testimonial
               </a>
             </li>
             <li className="nav-item ms-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#FAQ">
                 FAQ
               </a>
             </li>
