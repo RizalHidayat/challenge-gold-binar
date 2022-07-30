@@ -20,7 +20,7 @@ const Banner = () => {
           </Link>
         </div>
         <div className="col-6 d-flex align-items-end right-landing">
-          <img src="./aset/img_car.png" alt="Car" />
+          <img src="../aset/img_car.png" alt="Car" />
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../../components/Navbar";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 
 const Detailcar = () => {
   const [car, setCar] = useState({});
@@ -20,7 +21,7 @@ const Detailcar = () => {
   return (
     <div>
       <Navbar />
-
+      <Banner />
       {!!Object.keys(car).length ? (
         <div>
           <img src={car.image} />
@@ -30,6 +31,7 @@ const Detailcar = () => {
       ) : (
         <p>loading</p>
       )}
+      <Footer />
     </div>
   );
 };

@@ -36,3 +36,20 @@ body{
 .btn-arrow:hover{
   cursor: pointer;
 }
+
+.slick-slide > div {
+  margin: 0 12px;
+}
+
+.slick-list  {
+  margin: 0 -12px;
+}
+
+.testimonial{
+  background-color: #F1F3FF !important;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}

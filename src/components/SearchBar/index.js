@@ -1,9 +1,9 @@
 const SearchBar = (props) => {
   const { handleChangeName, handleSearch } = props;
   return (
-    <div className="container">
+    <div className="container mt-4">
       <div className="row">
-        <div className="col-3">
+        <div className="col">
           <label className="form-label">Nama Mobil</label>
           <input
             className="form-control"
@@ -14,7 +14,7 @@ const SearchBar = (props) => {
           />
           <datalist id="datalistOptions"></datalist>
         </div>
-        <div className="col-3">
+        <div className="col">
           <label for="exampleDataList" class="form-label">
             Kategori
           </label>
@@ -30,7 +30,7 @@ const SearchBar = (props) => {
             </select>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col">
           <label for="exampleDataList" class="form-label">
             Harga
           </label>
@@ -46,7 +46,7 @@ const SearchBar = (props) => {
             </select>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col">
           <label for="exampleDataList" class="form-label">
             Status
           </label>
@@ -61,6 +61,8 @@ const SearchBar = (props) => {
               <option value="2">Disewa</option>
             </select>
           </div>
+        </div>
+        <div className="col pt-4">
           <button onClick={handleSearch} class="btn btn-success" type="button">
             Pilih Mobil
           </button>

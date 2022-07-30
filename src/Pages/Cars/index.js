@@ -5,16 +5,26 @@ import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
 import Banner from "../../components/Banner";
 import SearchBar from "../../components/SearchBar";
+import CarList from "../../components/CarList";
 
 const Cars = () => {
   const [data, setData] = useState([]);
+  const [fdata, setFdata] = useState([]);
+  const [notFound, setNotFound] = useState(false);
   const [name, setName] = useState("");
   const handleChangeName = (e) => {
     setName(e.target.value);
+    if (!e.target.value.length) {
+      setFdata([]);
+      setNotFound(false);
+    }
   };
   const handleSearch = () => {
     const newArr = data.filter((item) => item.name === name);
-    setData(newArr);
+    setFdata(newArr);
+    if (!newArr.length) {
+      setNotFound(true);
+    }
   };
 
   useEffect(() => {
@@ -29,27 +39,15 @@ const Cars = () => {
     handleChangeName,
   };
   console.log("data ini adalah", data);
+  console.log("data ini adalah fdata", fdata);
   console.log("data ini adalah nama", name);
   return (
     <div>
       <Navbar />
       <Banner />
       <SearchBar {...props} />
-      {!!data.length &&
-        data.map((item) => (
-          <div>
-            <div>
-              <img src={item.image} />
-            </div>
-            <div>
-              <h1>{item.name}</h1>
-              <p>{item.price}</p>
-              <Link to={`/detailmobil/${item.id}`}>
-                <button>Pilih Mobil</button>
-              </Link>
-            </div>
-          </div>
-        ))}
+      {!!notFound && <h1>Data Tidak Ditemukan</h1>}
+      <CarList data={!fdata.length ? data : fdata} {...props} />
       <Footer />
     </div>
   );
