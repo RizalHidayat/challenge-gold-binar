@@ -10,11 +10,11 @@ const FAQ = () => {
           <div className="accordion-item">
             <h4 className="accordion-header" id="headingOne">
               <button
-                className="accordion-button"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="collapseOne"
               >
                 Apa saja syarat yang dibutuhkan?

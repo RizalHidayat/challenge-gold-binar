@@ -10,7 +10,7 @@ const SearchBar = (props) => {
               className="form-control"
               list="datalistOptions"
               id="exampleDataList"
-              placeholder="Type Cars Name..."
+              placeholder="Ketik nama/tipe mobil"
               onChange={(e) => handleChangeName(e)}
             />
             <datalist id="datalistOptions"></datalist>
@@ -25,7 +25,7 @@ const SearchBar = (props) => {
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
               >
-                <option selected>Choose...</option>
+                <option selected>Masukan Kapasitas Mobil</option>
                 <option value="1">True</option>
                 <option value="2">False</option>
               </select>
@@ -41,7 +41,7 @@ const SearchBar = (props) => {
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
               >
-                <option selected>Choose...</option>
+                <option selected>Masukan Harga Sewa per Hari</option>
                 <option value="1">Tersedia</option>
                 <option value="2">Disewa</option>
               </select>
@@ -57,7 +57,7 @@ const SearchBar = (props) => {
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
               >
-                <option selected>Choose...</option>
+                <option selected>Pilih</option>
                 <option value="1">Tersedia</option>
                 <option value="2">Disewa</option>
               </select>

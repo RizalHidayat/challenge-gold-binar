@@ -5,7 +5,7 @@ import rupiah from "rupiah-format";
 const CarList = (props) => {
   return (
     <div className="container my-5">
-      <div className="row">
+      <div className="row row-col-1 row-col-md-3 g-4">
         {!!props.data.length &&
           props.data.map((item) => (
             <div className="col-4">
