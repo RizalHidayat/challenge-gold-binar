@@ -4,16 +4,16 @@ const WhyUs = () => {
   return (
     <div id="WhyUs">
       <div className="container pb-5">
-        <div className="container">
+        <div className="container text-center text-lg-start">
           <h3>Why Us?</h3>
           <p>Mengapa harus pilih Binar Car Rental?</p>
         </div>
-        <div className="row gap-4">
+        <div className="row p-3 gap-4">
           {!!data.length &&
             data.map((item, index) => (
               <div
-                className="card border-1 col-md-3 col-sm-12 d-flex flex-column align-content-center p-2"
-                style={{ width: "16rem" }}
+                className="whyCard card border-1 col-md-3 d-flex flex-column align-content-center p-3"
+                // style={{ width: "16rem" }}
                 key={index}
               >
                 <div className="container">

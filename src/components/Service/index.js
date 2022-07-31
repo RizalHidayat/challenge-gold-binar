@@ -3,16 +3,16 @@ import data from "./data";
 const Service = () => {
   return (
     <div id="Service">
-      <div className="container service">
+      <div className="container-lg service">
         <div className="row justify-content-center align-item-center">
-          <div className="col-6 left-service">
+          <div className="col-xl-6 left-service d-flex justify-content-center">
             <img src="./aset/img_service.png" alt="Service" />
           </div>
-          <div className="col-6 my-5 ps-5">
+          <div className="col-xl-6 my-5 ps-xl-5">
             <h4 className="mb-3">
               Best Car Rental for any kind of trip in (Lokasimu)!
             </h4>
-            <p className="mb-4 text-wrap" style={{ width: "30rem" }}>
+            <p className="subtitle mb-4 text-wrap">
               Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
               lebih murah dibandingkan yang lain, kondisi mobil baru, serta
               kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,

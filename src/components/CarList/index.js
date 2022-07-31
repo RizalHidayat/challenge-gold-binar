@@ -1,24 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import rupiah from "rupiah-format";
 
 const CarList = (props) => {
   return (
-    <div>
-      {!!props.data.length &&
-        props.data.map((item) => (
-          <div>
-            <div>
-              <img src={item.image} />
+    <div className="container my-5">
+      <div className="row">
+        {!!props.data.length &&
+          props.data.map((item) => (
+            <div className="col-4">
+              <div className="card">
+                <img src={item.image} className="card-img-top" />
+
+                <div className="card-body">
+                  <div className="card-title">
+                    <h1> {item.name}</h1>
+                  </div>
+                  <p>{rupiah.convert(item.price)}</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{" "}
+                  </p>
+                  <Link to={`/detailmobil/${item.id}`}>
+                    <button className="btn btn-success">Pilih Mobil</button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div>
-              <h1>{item.name}</h1>
-              <p>{item.price}</p>
-              <Link to={`/detailmobil/${item.id}`}>
-                <button>Pilih Mobil</button>
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 };

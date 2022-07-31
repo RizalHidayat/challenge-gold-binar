@@ -10,6 +10,7 @@ import CarList from "../../components/CarList";
 const Cars = () => {
   const [data, setData] = useState([]);
   const [fdata, setFdata] = useState([]);
+  const [carPage, setCarPage] = useState(false);
   const [notFound, setNotFound] = useState(false);
   const [name, setName] = useState("");
   const handleChangeName = (e) => {
@@ -26,6 +27,9 @@ const Cars = () => {
       setNotFound(true);
     }
   };
+  useEffect(() => {
+    setCarPage(true);
+  }, []);
 
   useEffect(() => {
     axios
@@ -44,8 +48,9 @@ const Cars = () => {
   return (
     <div>
       <Navbar />
-      <Banner />
+      <Banner carPage={carPage} />
       <SearchBar {...props} />
+
       {!!notFound && <h1>Data Tidak Ditemukan</h1>}
       <CarList data={!fdata.length ? data : fdata} {...props} />
       <Footer />

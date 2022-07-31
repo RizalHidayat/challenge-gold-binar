@@ -11,7 +11,7 @@ import { useState } from "react";
 const Testimonial = () => {
   const [sliderRef, setSliderRef] = useState(null);
   const settings = {
-    // dots: true,
+    dots: false,
     className: "center",
     centerMode: true,
     infinite: true,
@@ -26,15 +26,15 @@ const Testimonial = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -62,12 +62,12 @@ const Testimonial = () => {
                 style={{ width: "50rem" }}
                 key={index}
               >
-                <div className="row">
-                  <div className="col-2">
+                <div className="row text-center text-lg-start">
+                  <div className="col-xl-2 d-flex justify-content-center justify-content-lg-start">
                     <img src={item.img} width={50} />
                   </div>
-                  <div className="col-10">
-                    <div className="d-flex p-2">
+                  <div className="col-xl-10">
+                    <div className="d-flex p-2 justify-content-center justify-content-lg-start">
                       <img src={item.star} />
                       <img src={item.star} />
                       <img src={item.star} />

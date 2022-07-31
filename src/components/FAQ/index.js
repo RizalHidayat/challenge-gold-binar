@@ -1,16 +1,16 @@
 const FAQ = () => {
   return (
-    <div className="container p-2">
-      <div className="row">
-        <div className="col-6">
+    <div className="container p-2" id="FAQ">
+      <div className="row ">
+        <div className="col-xl-6 text-center text-lg-start">
           <h3>Frequently Asked Question</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
-        <div class="accordion col-6" id="accordionExample">
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingOne">
+        <div className="accordion col-xl-6" id="accordionExample">
+          <div className="accordion-item">
+            <h4 className="accordion-header" id="headingOne">
               <button
-                class="accordion-button"
+                className="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -22,11 +22,11 @@ const FAQ = () => {
             </h4>
             <div
               id="collapseOne"
-              class="accordion-collapse collapse show"
+              className="accordion-collapse collapse show"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
@@ -36,10 +36,10 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingTwo">
+          <div className="accordion-item">
+            <h4 className="accordion-header" id="headingTwo">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -51,11 +51,11 @@ const FAQ = () => {
             </h4>
             <div
               id="collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
@@ -65,10 +65,10 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -80,11 +80,11 @@ const FAQ = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
@@ -94,10 +94,10 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFour">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFour"
@@ -109,11 +109,11 @@ const FAQ = () => {
             </h2>
             <div
               id="collapseFour"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingFour"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
@@ -123,10 +123,10 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFive">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFive"
@@ -138,11 +138,11 @@ const FAQ = () => {
             </h2>
             <div
               id="collapseFive"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingFive"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing

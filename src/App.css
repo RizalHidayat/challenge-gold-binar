@@ -18,6 +18,7 @@ body{
 
 .right-landing img{
   width: 662px;
+
 }
 
 .navbar{
@@ -53,3 +54,61 @@ body{
   text-decoration: none;
   color: black;
 }
+
+.subtitle {
+  width: 32rem;
+}
+
+.whyCard{
+  width: 16rem;
+}
+
+.bannerBotBody {
+  width: 50%;
+}
+
+/* .sideBar {
+  position: absolute;
+  z-index: 9999;
+} */
+
+.carSearch{
+  width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing{
+    height: auto
+  }
+  .right-landing img{
+    width: 100%;
+  
+  }
+  .left-landing{
+    padding-left: 2rem;
+  }
+  .subtitle {
+    width: 100%;
+  }
+  .service{
+    padding: 16px;
+    height: auto;
+  }
+  .left-service img{
+    width: 80%;
+    
+  }
+  .whyCard{
+    width: 100%;
+  }
+  .bannerBotBody {
+    width: 100%;
+
+  }
+  .offcanvas {
+    max-width: 50%;
+  }
+
+}
+
+
