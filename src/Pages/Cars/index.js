@@ -51,7 +51,9 @@ const Cars = () => {
       <Banner carPage={carPage} />
       <SearchBar {...props} />
 
-      {!!notFound && <h1>Data Tidak Ditemukan</h1>}
+      {!!notFound && (
+        <h1 className="container p-5 text-center">Data Tidak Ditemukan</h1>
+      )}
       <CarList data={!fdata.length ? data : fdata} {...props} />
       <Footer />
     </div>

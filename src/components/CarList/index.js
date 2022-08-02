@@ -10,11 +10,15 @@ const CarList = (props) => {
           props.data.map((item) => (
             <div className="col-4">
               <div className="card">
-                <img src={item.image} className="card-img-top" />
+                <img
+                  src={item.image}
+                  height={"190px"}
+                  className="card-img-top"
+                />
 
                 <div className="card-body">
                   <div className="card-title">
-                    <h1> {item.name}</h1>
+                    <p> {item.name}</p>
                   </div>
                   <p>{rupiah.convert(item.price)}</p>
                   <p>

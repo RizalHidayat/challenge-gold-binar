@@ -70,7 +70,7 @@ const Detailcar = () => {
                         aria-expanded="false"
                         aria-controls="flush-collapseOne"
                       >
-                        Refund, Reschedule, Overtime
+                        <h5>Refund, Reschedule, Overtime</h5>
                       </button>
                     </h2>
                     <div

@@ -24,6 +24,7 @@ const SearchBar = (props) => {
                 className="form-select"
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
+                disabled
               >
                 <option selected>Masukan Kapasitas Mobil</option>
                 <option value="1">True</option>
@@ -40,6 +41,7 @@ const SearchBar = (props) => {
                 className="form-select"
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
+                disabled
               >
                 <option selected>Masukan Harga Sewa per Hari</option>
                 <option value="1">Tersedia</option>
@@ -56,6 +58,7 @@ const SearchBar = (props) => {
                 className="form-select"
                 id="inputGroupSelect04"
                 aria-label="Example select with button addon"
+                disabled
               >
                 <option selected>Pilih</option>
                 <option value="1">Tersedia</option>

@@ -15,7 +15,7 @@ const Footer = () => {
           <p>081-233-334-808</p>
         </div>
         <div className="col-xl-3">
-          <div className="row menu gap-3">
+          <div className="row menu gap-2">
             <a href="#Service">Our services</a>
             <a href="#WhyUs">Why Us</a>
             <a href="#Testimonial">Testimonial</a>
